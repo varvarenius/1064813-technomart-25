@@ -46,7 +46,13 @@
           <li><a href="perforators">Перфораторы</a></li>
       </ul>
       <h2 class="perforators">Перфораторы</h2>
+      <p class="filter">Фильтр:</p>
       <form method="POST">
+        <p>Цена:</p>
+        <label for="price">
+          <input type="range" name="price" id="price" value="price" min="0" max="30000">
+          0 - 30000
+        </label>
         <p>Производители:</p>
         <label for="Bosch">
           <input type="checkbox" name="Bosch" id="Bosch" value="Bosch" checked> Bosch
@@ -72,6 +78,14 @@
         </label>
         <input type="button" name="show" id="show" value="Показать">
       </form>
+      <table>
+        <tr>Сортировка:</tr>
+        <tr>По цене</tr>
+        <tr>По типу</tr>
+        <tr>По функционалу</tr>
+        <tr>&#9650;</tr>
+        <tr>&#9660;</tr>
+      </table>
       <section class="catalog">
           <h2 class="visually-hidden">Список перфораторов</h2>
           <ul class="catalog-list">
@@ -218,6 +232,19 @@
               </p>
             </li>
           </ul>
+        </section>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Следующая</a></li>
+        </ul>
+        <section class="few-words-about">
+          <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления
+            отверстий в кирпиче, бетоне и камне.</p>
+          <p>Существуют электромеханические и пневматические перфораторы. Современные модели могут
+            выполнять функции дрели, шуроповерта и отбойного молотка. В ассортиментном ряду есть
+            выбор "трехжимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </section>
     </main>
     <footer class="main-footer">
