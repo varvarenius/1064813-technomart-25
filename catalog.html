@@ -46,14 +46,15 @@
           <li><a href="perforators">Перфораторы</a></li>
       </ul>
       <h2 class="perforators">Перфораторы</h2>
-      <p class="filter">Фильтр:</p>
+
       <form method="POST">
-        <p>Цена:</p>
+        <legend class="filter">Фильтр:</legend>
+        <legend>Цена:</legend>
         <label for="price">
           <input type="range" name="price" id="price" value="price" min="0" max="30000">
           0 - 30000
         </label>
-        <p>Производители:</p>
+        <legend>Производители:</legend>
         <label for="Bosch">
           <input type="checkbox" name="Bosch" id="Bosch" value="Bosch" checked> Bosch
         </label>
@@ -69,7 +70,7 @@
         <label for="Hitachi">
             <input type="checkbox" name="Hitachi" id="Hitachi" value="Hitachi"> Hitachi
         </label>
-        <p>Питание:</p>
+        <legend>Питание:</legend>
         <label for="battery">
           <input type="radio" name="battery" id="battery" value="battery" checked> Аккумуляторные
         </label>
