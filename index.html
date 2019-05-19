@@ -201,6 +201,22 @@
         </a>
         <a href="#">Заблудились? Напишите нам!</a>
       </section>
+      <section class="write-us-popup">
+        <form method="POST" action="https://echo.htmlacademy.ru">
+          <label for="name-surname">Ваше имя:
+          <input type="text" name="name-surname" id="name-surname" placeholder="Имя Фамилия">
+          </label>
+          <label for="email">Ваш e-mail:
+            <input type="email" name="email" id="email" placeholder="email@example.com">
+          </label>
+          <label for="letter">Текст письма:
+            <textarea type="text" name="letter" id="letter" placeholder="В свободной форме" rows="5">
+            </textarea>
+            <!--почему-то placeholder не виден. Как его сделать видимым на странице?-->
+          </label>
+          <input type="submit" value="Отправить">
+        </form>
+      </section>
     </main>
     <footer class="main-footer">
       <section class="footer-1">
