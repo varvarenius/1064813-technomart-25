@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -15,16 +18,19 @@
           Поиск: <input type="search" name="search" id="search">
           </label>
         </form>
+        <div class="count">
         <a href="markers.html">Закладки: 0</a>
         <a href="cart">Корзина: 0 </a>
+        </div>
         <button type="submit">Оформить заказ</button>
       </section>
+      <div class="main-header-bottom">
       <h1 class="page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
       <p class="address-top">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       <ul class="user-navigation">
-        <li class="login-link">Войти</li>
-        <li class="registration-link">Регистрация</li>
+        <li class="login"><a href="income.html">Войти</a></li>
+        <li class="registration"><a href="register.html">Регистрация</a></li>
       </ul>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -37,6 +43,7 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
+      </div>
     </header>
     <main class="container">
       <ul class="offers">
