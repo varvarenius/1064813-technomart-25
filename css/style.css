@@ -13,63 +13,94 @@ body {
 a {
   text-decoration: none;
 }
-/*верхняя строка шапки сайта*/
-.main-header-logo img {
-  background-size: 220px 47px;
-  padding: 13px 56px 15px 55px;
-  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
-  background-color: #ee3643;
-  margin-left: 130px;
-  float: left;
-}
 
 .main-header-top {
-  height: 42px;
-  width: 1200px;
   background-color: #293449;
+}
+
+.main-navigation {
+  font-size: 17px;
+  line-height: 17px;
   color: #ffffff;
-}
 
-.main-header-top label {
-  float: left;
-  margin-left: 49px;
-  position: relative;
-  padding-top: 14px;
-  line-height: 12px;
-}
-
-.main-header-top input {
   background-color: #293449;
-  border: 0;
-}
-.count a:first-child {
-  color: #ffffff;
-  float: left;
-  text-align: left;
-  left: 664px;
-  top: 14px;
-  position: absolute;
-  line-height: 18px;
-  height: 15px;
 }
 
-.count a:last-child {
-  color: #ffffff;
-  float: left;
-  text-align: left;
-  left: 820px;
-  top: 14px;
-  position: absolute;
-  line-height: 18px;
-  height: 15px;
+.site-navigation,
+.user-navigation,
+.popular-goods-list,
+.popular-sellers,
+.nav-footer-1,
+.nav-footer-2,
+.social {
+  list-style: none;
 }
 
-.main-header-top button {
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  background-color: #32425c;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.offers {
+  list-style: none;
+}
+
+.offers li,
+.popular-goods {
+  text-align: center;
+}
+
+.container .popular h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.popular-goods {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.services,
+.about,
+.contacts,
+.delivery {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services h3,
+.about h3,
+.contacts h3 {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+.delivery h3 {
+  font-size: 36px;
+  line-height: 36px;
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+.make-order-button {
   width: 150px;
   height: 42px;
   background-color: #63a63e;
-  position: absolute;
-  right: 280px;
   color: #ffffff;
   line-height: 15px;
   font-family: "Cuprum", Arial, sans-serif;
@@ -78,124 +109,21 @@ a {
   border: 0;
 }
 
-
-
-
-/*нижняя строка шапки сайта*/
-
-
-.main-header-bottom>a {
-  float: left;
-  color: #ee3643;
-  border: solid 3px #ffffff;
-  position: absolute;
-  font-size: 21px;
-  text-align: center;
-  vertical-align: center;
-  padding: 10px 52px 8px 74px;
-  left: 524px;
-  top: 88px;
-  left: 450px;
+.make-order-button:hover {
+  background-color: #5fbb2d;
 }
 
- .main-header-bottom>p{
-  width: 250px;
-  height: 13px;
-  font-family: Cuprum;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.71;
-  letter-spacing: normal;
-  text-align: center;
-  color: #32425c;
-  position: absolute;
-  left: 460px;
-  top: 128px;
-  width: 260px;
-
+.make-order-button:focus {
+  background-color: #518534;
 }
-
-.main-navigation {
-  width: 940px;
-  height: 60px;
-  box-shadow: inset 0px -5px 0 0 #293449;
-  background-color: #32425c;
-  margin-top: 89px;
-  margin-left: 130px;
-  background-origin: border-box;
-  padding: 0;
-  position: relative;
-  }
-
-.main-navigation li {
-  display: inline-block;
-  text-align: center;
-
-}
-
-.site-navigation a {
-  text-align: left;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  color: #ffffff;
-  display: block;
-  padding: 28px;
-  padding-top: 22px;
-
-}
-.main-header-bottom {
-  overflow: hidden;
-  height: 278px;
-  width: 1200px;
-  background-color: #f4f7f9;
-  border: 0;
-}
-
-.page-title {
-  width: 196px;
-  height: 60px;
-  font-family: Cuprum;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: italic;
-  font-stretch: normal;
-  line-height: 1.44;
-  letter-spacing: normal;
-  text-align: left;
-  color: #ee3643;
-  position: absolute;
-  padding-left: 183px;
-  margin-top: 49px;
-}
-
-.user-navigation li {
-  display: inline-block;
-  text-align: center;
-
-}
-
-.user-navigation a {
-  text-align: left;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  color: #000000;
-  display: block;
-  padding: 28px;
-  padding-top: 22px;
+.make-order-button:active {
+  background-color: #63a63e;
 }
 
 .login a {
   width: 46px;
   height: 16px;
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   font-weight: normal;
   font-style: normal;
@@ -206,15 +134,22 @@ a {
   color: #000000;
   background-color: #ffffff;
   padding: 14px 27px 15px 48px;
-  position: absolute;
-  left: 789px;
-  top: 88px;
+}
+
+.login a:hover {
+  color: #ee3643;
+  background-color: #ffffff;
+}
+
+.login a:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
 }
 
 .registration a {
   width: 100px;
   height: 20px;
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   font-weight: normal;
   font-style: normal;
@@ -225,7 +160,227 @@ a {
   color: #000000;
   background-color: #ffffff;
   padding: 14px 25px 11px 25px;
-  position: absolute;
-  left: 920px;
-  top: 88px;
+}
+
+.registration a:hover {
+  color: #ee3643;
+  background-color: #ffffff;
+}
+
+.registration a:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+}
+
+.popular a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    width: 253px;
+    height: 38px;
+    background-color: #ee3643;
+    width: 253px;
+    height: 38px;
+    text-transform: uppercase;
+    padding: 14px 55px;
+    }
+
+.contacts .write-us {
+  font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    width: 253px;
+    height: 38px;
+    background-color: #ee3643;
+    width: 220px;
+    height: 38px;
+    text-transform: uppercase;
+    padding: 14px 40px 12px 41px;
+}
+
+.about a {
+  font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    width: 253px;
+    height: 38px;
+    background-color: #ee3643;
+    width: 220px;
+    height: 38px;
+    text-transform: uppercase;
+    padding: 14px 40px 12px 41px;
+}
+
+.main-header-logo img {
+  background-size: 220px 47px;
+  padding: 13px 56px 15px 55px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+
+.main-header-logo img:hover {
+  background-color: #ca2c37;
+}
+
+.main-header-logo img:active {
+  background-color: #ba2732;
+}
+
+.popular a:hover,
+.lost a:hover,
+.about a:hover {
+  background-color: #ca2c37;
+}
+
+.popular a:active,
+.lost a:active,
+.about a:active {
+  background-color: #ba2732;
+}
+
+.footer-1 {
+  background-color: #32425c;
+}
+
+.footer-2 {
+  background-color: #293449;
+}
+
+.main-footer,
+.main-footer a {
+  color: #ffffff;
+}
+
+.nav-footer-2 a,
+.mail a,
+.developer a {
+  color: #ffd180;
+}
+
+.mail a:hover,
+.developer a:hover {
+  text-decoration: underline;
+}
+
+.mail a:active,
+.developer a:active {
+  color: #ee3643;
+}
+
+.main-header-top input {
+  font: inherit;
+
+  background-color: transparent;
+  border: none;
+}
+
+.main-header-top input:hover {
+  background-color: #212a3a;
+}
+
+.main-header-top:focus {
+  background-color: #ffffff;
+}
+
+.main-header-top input:active {
+  background-color: #293449;
+}
+
+.nav-footer-1 a:hover,
+.nav-footer-2 a:hover {
+  text-decoration: underline;
+}
+
+.nav-footer-1 a:active {
+  color: rgba(241, 245, 247, 0.5);
+}
+
+.nav-footer-1 a:active {
+  color: rgba(255, 209, 128, 0.5);
+}
+
+.page-title {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.tel-number a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #e9292a;
+}
+
+.main-header {
+  background-color: #f4f7f9;
+}
+
+.menu-count a {
+  color: #ffffff;
+}
+
+.menu-count a:last-child {
+  width: 74px;
+  height: 15px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white-two);
+  background-color: #ee3643;
+  padding: 14px 26px 13px 50px;
+}
+
+.count a {
+  color: #ffffff;
+}
+
+.main-header-top label {
+  color: #ffffff;
+}
+
+.user-links li {
+  list-style: none;
+}
+
+.user-links li a {
+  text-decoration: underline;
+  color: #32425c;
+}
+
+.few-words-about h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.few-words-about p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
