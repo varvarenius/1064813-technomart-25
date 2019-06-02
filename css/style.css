@@ -520,6 +520,7 @@ a {
 .footer-logo-address {
   display: flex;
   flex-direction: column;
+  margin-bottom: 53px;
 }
 
 
@@ -529,7 +530,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-content: flex-start;
-  margin-bottom: 100px;
+  margin-bottom: 153px;
   margin-right: 130px;
   width: 720px;
 
@@ -542,5 +543,31 @@ a {
   align-content: flex-end;
   margin-left: 105px;
   width: 615px;
-  margin-top: -60px;
+  margin-top: -113px;
+}
+
+.footer-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  margin-left: 130px;
+}
+
+.developer {
+  margin-right: 130px;
+  width: 100px;
+}
+
+.mail {
+  width: 135px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  width: 300px;
 }
