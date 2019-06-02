@@ -16,6 +16,7 @@ a {
 
 .main-header-top {
   background-color: #293449;
+  height: 42px;
 }
 
 .main-navigation {
@@ -383,4 +384,40 @@ a {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+}
+/*проверять отсюда*/
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header-logo {
+  margin-left: 130px;
+}
+
+.make-order-button {
+  margin-right: 130px;
+}
+
+.main-header-top form {
+  flex-basis: 314px;
+}
+
+.count {
+ flex-basis: 269px;
+ display: flex;
+ justify-content: flex-end;
+ margin-right: 31px;
+}
+
+.count a:first-child {
+  margin-right: 78px;
 }
