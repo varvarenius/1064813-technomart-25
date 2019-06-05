@@ -229,7 +229,7 @@ a {
     width: 220px;
     height: 38px;
     text-transform: uppercase;
-    padding: 14px 40px 12px 41px;
+
 }
 
 .main-header-logo img {
@@ -647,4 +647,57 @@ a {
 .tel-address {
   position: relative;
   left: 50px;
+}
+
+.about-contacts {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  width: 640px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 120px;
+  position: relative;
+  left: 143px;
+}
+
+.about a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 38px;
+  position: relative;
+  top: 8px;
+}
+
+.contacts p {
+  position: relative;
+  top: -20px;
+}
+
+.contacts img {
+  position: relative;
+  top: -18px;
+}
+
+.transport-companies li {
+  line-height: 36px;
+  font-weight: bold;
+  font-family: Cuprum;
+  font-size: 18px;
 }
