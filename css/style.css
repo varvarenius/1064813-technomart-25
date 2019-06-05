@@ -23,7 +23,6 @@ a {
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
-
   background-color: #293449;
 }
 
@@ -340,11 +339,15 @@ a {
 
 .menu-count a {
   color: #ffffff;
+  width: 90px;
 }
 
-.menu-count a:last-child {
-  width: 74px;
-  height: 15px;
+.count a {
+  color: #ffffff;
+  width: 90px;
+}
+
+.menu-count a:nth-child(2) {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   font-weight: normal;
@@ -355,12 +358,12 @@ a {
   text-align: left;
   color: var(--white-two);
   background-color: #ee3643;
-  padding: 14px 26px 11px 50px;
+  padding: 12px 26px 12px 50px;
   margin-left: 28px;
 }
 
-.count a {
-  color: #ffffff;
+.menu-count a:first-child {
+  padding-top: 9px;
 }
 
 .main-header-top label {
@@ -399,18 +402,18 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 940px;
+  margin: 0 auto;
 }
 
-.main-header-logo {
-  margin-left: 130px;
-}
-
-.make-order-button {
-  margin-right: 130px;
+.header-top-1 {
+  background-color: #293449;
 }
 
 .main-header-top form {
   flex-basis: 314px;
+  position: relative;
+  left: 49px;
 }
 
 .count {
@@ -430,12 +433,20 @@ a {
   justify-content: space-between;
   align-content: stretch;
   align-items: center;
+  width: 940px;
+  margin: 0 auto;
+  height: 158px;
 }
+
+.header-top-2 {
+  width: 940px;
+  margin: 0 auto;
+}
+
 
 .page-title {
   flex-basis: 210px;
   flex-wrap: wrap;
-  margin-left: 183px;
   margin-top: 54px;
 }
 
@@ -464,7 +475,6 @@ a {
 }
 
 .user-navigation .registration{
-  margin-right: 130px;
   margin-left: 10px;
   margin-top: 15px;
 }
@@ -476,16 +486,22 @@ a {
 .site-navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: stretch;
   align-items: center;
+  width: 940px;
+  bottom: 20px;
 
 }
 
 .main-navigation {
-  margin-left: 130px;
-  margin-right: 130px;
-  padding: 1px 55px 1px 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1px 7px 1px 7px;
+  background-color: #32425c;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .footer-1 {
@@ -493,19 +509,16 @@ a {
   flex-direction: row;
   align-items: flex-start;
   flex-basis: 322px;
-
+  width: 940px;
+  margin: 0 auto;
 }
 
 .address-bottom {
-  margin-left: 130px;
   margin-top: 32px;
   width: 322px;
 }
 
-
-
 .tel-number-bottom {
-  margin-left: 130px;
   margin-top: -20px;
 }
 
@@ -517,6 +530,10 @@ a {
   align-content: stretch;
   align-items: flex-start;
   flex-wrap: wrap;
+}
+
+.bottom-1 {
+  background-color: #32425c;
 }
 
 .footer-logo-address {
@@ -533,7 +550,7 @@ a {
   justify-content: space-between;
   align-content: flex-start;
   margin-bottom: 153px;
-  margin-right: 130px;
+
   width: 720px;
 
 }
@@ -543,7 +560,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-content: flex-end;
-  margin-left: 105px;
+  margin-left: 91px;
   width: 615px;
   margin-top: -113px;
 }
@@ -551,15 +568,18 @@ a {
 .footer-2 {
   display: flex;
   justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
 }
 
-.copyright {
-  margin-left: 130px;
+
+.bottom-2 {
+  background-color: #293449;
 }
 
 .developer {
-  margin-right: 130px;
   width: 100px;
+  margin-left: 53px;
 }
 
 .mail {
@@ -595,11 +615,12 @@ a {
   text-align: left;
   color: #000000;
   background-color: #ffffff;
-  padding: 14px 69px 15px 47px;
+  padding: 14px 50px 15px 47px;
   margin-top: 88px;
   border: 1px solid #ffffff;
-  margin-right: 130px;
-  width: 440px;
+  width: 210px;
+  margin-right: 0;
+  margin-left: 135px;
 }
 
 .user-links {
@@ -609,4 +630,16 @@ a {
   flex-direction: row;
   margin-top: -12px;
   margin-bottom: 43px;
+  margin-left: 110px;
+}
+
+.menu-count {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.tel-address {
+  position: relative;
+  left: 50px;
 }
