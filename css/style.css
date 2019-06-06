@@ -374,7 +374,7 @@ a {
   list-style: none;
 }
 
-.user-links li a {
+.user-links a{
   text-decoration: underline;
   color: #32425c;
   font-size: 16px;
