@@ -710,16 +710,38 @@ a {
 .second-navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-content: stretch;
   align-items: center;
   width: 255px;
   position: relative;
-  left: 170px;
+  left: 200px;
 }
 
 .second-navigation li {
   list-style: none;
+  position: relative;
+  margin-right: 39px;
+}
+
+.second-navigation li::before {
+  content: "";
+  position: absolute;
+  background-image: url('/img/icon-right-small.svg');
+  width: 8px;
+  height: 12px;
+  top: 6px;
+  left: -20px;
+}
+
+.second-navigation .catalog-home::after {
+  content: "";
+  position: absolute;
+  background-image: url('/img/icon-home.svg');
+  width: 14px;
+  height: 12px;
+  top: 6px;
+  right: 85px;
 }
 
 .perforators {
@@ -745,3 +767,4 @@ a {
   width: 700px;
   justify-content: space-between;
 }
+
