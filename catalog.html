@@ -61,13 +61,14 @@
                   </header>
     <main class="container">
       <ul class="second-navigation">
-          <li class="catalog-home"><a>Каталог</a></li>
-          <li><a href="instrument.html">Инструмент</a></li>
-          <li><a href="perforators">Перфораторы</a></li>
+        <li class="catalog-home"><a>Каталог</a></li>
+        <li><a href="instrument.html">Инструмент</a></li>
+        <li><a href="perforators">Перфораторы</a></li>
       </ul>
       <h2 class="perforators">Перфораторы</h2>
-      <section class="filters">
-      <form method="POST" action="https://echo.htmlacademy.ru">
+       <div class="index-columns-container">
+         <section class="filters">
+          <form method="POST" action="https://echo.htmlacademy.ru">
         <h3>Фильтр:</h3>
         <h4>Цена:</h4>
         <label for="price">
@@ -107,11 +108,11 @@
           <input class="visually-hidden filter-input filter-input-radio" type="radio" name="net" id="net" value="net">
           <label for="net">Сетевые</label>
         </li>
-      </ul>
+       </ul>
         <button class="filter-submit" type="submit">Показать</button>
-      </form>
-    </section>
-    <div class="main-page">
+       </form>
+       </section>
+    <section class="main-page">
       <div class="sort">
         <h3>Сортировка:</h3>
       <ul class="filter">
@@ -266,9 +267,8 @@
               </p>
             </li>
           </ul>
-        </section>
-        </div>
-        <section class="cart-popup">
+       </section>
+        <div class="cart-popup">
           <p>Товар добавлен в корзину!</p>
           <form method="POST" action="https://echo.htmlacademy.ru">
             <input type="submit" name="checkout" id="checkout" value="Оформить заказ">
@@ -279,13 +279,15 @@
           <form method="POST" action="https://echo.htmlacademy.ru">
             <input type="button" name="close" id="close" value="&#215;">
           </form>
-        </section>
+        </div>
         <ul class="paginator">
           <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">Следующая</a></li>
         </ul>
+      </section>
+       </div>
         <section class="few-words-about">
           <h2 class="about-perforators">Пара слов о перфораторах</h2>
           <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления

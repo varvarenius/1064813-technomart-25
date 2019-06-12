@@ -766,7 +766,6 @@ a {
   width: 220px;
   display: block;
   position: relative;
-  left: 205px;
   text-transform: uppercase;
 }
 
@@ -927,6 +926,7 @@ input[type="radio"].visually-hidden {
 .catalog {
   width: 750px;
   display: flex;
+  margin-left: 15px;
 }
 
 .catalog-list {
@@ -1061,14 +1061,26 @@ input[type="radio"].visually-hidden {
 .sort {
   display: flex;
   margin: 0 auto;
+  margin-left: 15px;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: flex-start;
   align-content: stretch;
   align-items: center;
-  width: 700px;
+  width: 705px;
   position: relative;
   background-color: #f7f3ec;
+}
+
+.sort h3 {
+  padding: 14px 90px 15px 19px;
+  font-family: "PTSans";
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  text-transform: uppercase;
 }
 
 .sort ul {
@@ -1078,19 +1090,39 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   list-style: none;
   margin: 0 auto;
+  font-family: "PTSans";
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  text-transform: uppercase;
 }
 
 
-.filter li {
+.filter li:first-child {
   list-style: none;
   position: relative;
-  margin-right: 71px;
+  padding: 14px 71px 13px 0px;
+}
+
+.filter li:nth-child(2) {
+  list-style: none;
+  position: relative;
+  padding: 14px 71px 13px 0px;
+}
+
+.filter li:last-child {
+  list-style: none;
+  position: relative;
+  padding: 14px 50px 13px 0px;
+
 }
 
 .direction li {
   list-style: none;
   position: relative;
-  margin-right: 21px;
+  padding-right: 20px;
 }
 
 .main-page {
@@ -1104,3 +1136,17 @@ input[type="radio"].visually-hidden {
 .filters {
   display: flex;
 }
+
+.index-columns-container {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.paginator {
+  display: flex;
+  width: 700px;
+}
+
