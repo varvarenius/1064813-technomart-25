@@ -390,7 +390,6 @@ a {
   font-size: 13px;
   line-height: 24px;
 }
-/*проверять отсюда*/
 
 .main-header {
   display: block;
@@ -426,17 +425,6 @@ a {
   margin-right: 78px;
 }
 
-.main-header-bottom {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: stretch;
-  align-items: center;
-  width: 940px;
-  margin: 0 auto;
-
-}
-
 .header-top-2 {
   width: 940px;
   margin: 0 auto;
@@ -445,22 +433,23 @@ a {
 .site-navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: stretch;
   align-items: center;
   width: 940px;
   bottom: 20px;
-
+  padding-right: 55px;
+  padding-left: 52px;
 }
 
 .main-navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 1px 7px 1px 7px;
   background-color: #32425c;
   width: 940px;
   margin: 0 auto;
+  box-shadow: inset 0px -5px 0 0 #293449;
 }
 
 .footer-1 {
@@ -555,16 +544,6 @@ a {
   justify-content: space-between;
   align-content: flex-start;
   width: 300px;
-}
-
-
-.user {
-  display: flex;
-  justify-content: space-between;
-  width: 440px;
-  flex-wrap: wrap;
-  flex-direction: row;
-
 }
 
 .menu-count {
@@ -1083,22 +1062,46 @@ header {
 
 /*шапка сайта*/
 
-.user {
-
+.main-header-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: stretch;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .page-title {
-  display: inline-block;
   width: 205px;
-}
-
-.tel-address {
-
+  margin-top: 54px;
+  margin-bottom: 44px;
+  font-family: "Cuprum";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--button);
+  margin-left: 52px;
+  margin-right: 40px;
 }
 
 .tel-number {
   border: solid 3px #ffffff;
   padding: 13px 52px 11px 74px;
+  display: inline-block;
+  margin-top: 47px;
+  font-family: "Cuprum";
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--button);
 }
 
 .address-top {
@@ -1126,23 +1129,58 @@ header {
   background-color: #ffffff;
   padding: 14px 69px 11px 47px;
   border: 1px solid #ffffff;
+  margin-top: 48px;
 }
 
 .user-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: row;
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: #32425c;
+  margin-top: -5px;
+}
+
+.user-links li:first-child {
+  margin-left: -20px;
+  margin-right: 32px;
 }
 
 .user-navigation {
   display: flex;
   align-items: center;
-}
-
-.user-navigation .registration{
-
+  position: relative;
+  top: -8px;
 }
 
 .user-navigation .login {
+  margin-right: 10px;
+}
+
+/*декоративные элементы шапки сайта*/
+
+.main-header-top label::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/icon-search.svg");
+  width: 17px;
+  height: 17px;
+  left: -32px;
+  top: 4px;
+}
+
+.count a:first-child::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/icon-bookmark.svg");
+  width: 14px;
+  height: 16px;
 
 }
