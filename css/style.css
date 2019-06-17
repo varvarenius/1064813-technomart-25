@@ -235,7 +235,7 @@ a {
 .main-header-logo img {
   background-size: 220px 47px;
   padding: 13px 56px 15px 55px;
-  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 5px 0px 0px #b52933;
   background-color: #ee3643;
 }
 
@@ -1182,5 +1182,84 @@ header {
   background-image: url("/img/icon-bookmark.svg");
   width: 14px;
   height: 16px;
+  left: -5px;
+  top: 3px;
+}
 
+.count a {
+  position: relative;
+  padding-left: 20px;
+}
+
+.count a:last-child::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/icon-cart.svg");
+  width: 15px;
+  height: 15px;
+  left: -5px;
+  top: 3px;
+}
+
+.tel-number a::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/icon-phone.svg");
+  width: 19px;
+  height: 19px;
+  left: -65px;
+  top: 2px;
+}
+
+.tel-number a {
+  position: relative;
+}
+
+.login a::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/icon-login.svg");
+  width: 20px;
+  height: 17px;
+  left: 50px;
+  top: 56px;
+}
+
+.username::after {
+  content: "";
+  position: absolute;
+  background-image: url("/img/icon-logout.svg");
+  width: 20px;
+  height: 17px;
+  right: 10px;
+  top: 17px;
+}
+
+.username {
+  position: relative;
+}
+
+.username::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/icon-user.svg");
+  width: 20px;
+  height: 18px;
+  left: 10px;
+  top: 15px;
+}
+
+.user-links li:first-child::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #32425c;
+  border-radius: 50%;
+  right: -18px;
+  top: 7px;
+}
+
+.user-links li {
+  position: relative;
 }
