@@ -1263,3 +1263,20 @@ header {
 .user-links li {
   position: relative;
 }
+
+/*соцсети*/
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.soc-btn-vk:before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/icon-vk.svg");
+}
