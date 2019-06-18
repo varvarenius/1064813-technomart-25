@@ -501,7 +501,7 @@ a {
   align-content: flex-start;
   margin-bottom: 153px;
 
-  width: 720px;
+  width: 580px;
 
 }
 
@@ -511,7 +511,7 @@ a {
   justify-content: space-between;
   align-content: flex-end;
   margin-left: 91px;
-  width: 615px;
+  width: 490px;
   position: relative;
   top: -116px;
 }
@@ -532,10 +532,30 @@ a {
 .developer {
   width: 100px;
   margin-left: 53px;
+  font-family: "Cuprum";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  display: block;
+  margin-top: 23px;
 }
 
 .mail {
   width: 135px;
+  font-family: "Cuprum";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  display: block;
+  margin-top: 23px;
 }
 
 .social {
@@ -1273,10 +1293,71 @@ header {
   width: 42px;
   height: 42px;
   border-radius: 50%;
+  background-color: #212a3a;
+  position: relative;
+  margin-right: 3px;
 }
 
 .soc-btn-vk:before {
   content: "";
   position: absolute;
   background-image: url("/img/icon-vk.svg");
+  width: 42px;
+  height: 42px;
+  background-repeat: no-repeat;
+  left: 7px;
+  top: 13px;
 }
+
+.soc-btn-fb:before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/icon-fb.svg");
+  width: 42px;
+  height: 42px;
+  background-repeat: no-repeat;
+  left: 15px;
+  top: 11px;
+}
+
+.soc-btn-insta:before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/icon-insta.svg");
+  width: 42px;
+  height: 42px;
+  background-repeat: no-repeat;
+  left: 12px;
+  top: 11px;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.copyright {
+  font-family: "Cuprum";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  display: block;
+  padding-right: 0px;
+  margin-top: 10px;
+}
+
+.footer-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.soc-btn-vk {
+  margin-left: 70px;
+}
+
