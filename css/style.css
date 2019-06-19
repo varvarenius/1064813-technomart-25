@@ -1374,6 +1374,12 @@ header {
 .catalog-item:hover .action,
 .catalog-item:focus .action {
   border-color:transparent;
+  display: block;
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+  border-color:transparent;
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, .5);
   display: block;
 }
@@ -1383,7 +1389,7 @@ header {
   opacity: 0;
 }
 
-.btn-buy {
+.catalog-item .btn-buy {
   margin-bottom: 8px;
   padding: 12px 0;
   text-align: center;
@@ -1409,7 +1415,7 @@ header {
   background-color: #367315;
 }
 
-.btn-bookmark {
+.catalog-item .btn-bookmark {
   padding: 9px 0;
   text-align: center;
   text-transform: uppercase;
