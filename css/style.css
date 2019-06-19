@@ -1371,8 +1371,8 @@ header {
   width: 135px;
 }
 
-.catalog-item:hover,
-.catalog-item:focus {
+.catalog-item:hover .action,
+.catalog-item:focus .action {
   border-color:transparent;
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, .5);
   display: block;
