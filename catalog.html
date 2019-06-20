@@ -69,10 +69,20 @@
           <form method="POST" action="https://echo.htmlacademy.ru">
             <h3>Фильтр:</h3>
             <h4>Цена:</h4>
-            <label for="price">
-              <input type="range" name="price" id="price" min="0" max="30000">
-              0 - 30000
-            </label>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <input name="min-price" type="text" value="0" />
+                —
+                <input name="max-price" type="text" value="30000" />
+              </div>
+            </div>
             <h4>Производители:</h4>
             <ul>
               <li class="filter-option">

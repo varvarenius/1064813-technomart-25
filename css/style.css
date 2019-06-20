@@ -1373,7 +1373,6 @@ header {
 
 .catalog-item:hover .action,
 .catalog-item:focus .action {
-  border-color:transparent;
   display: block;
 }
 
@@ -1443,4 +1442,73 @@ header {
   border-color: #c1c6ce;
 }
 
+/*filter price*/
 
+.range-filter {
+  margin-bottom: 25px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 10px;
+  padding: 39px 20px 0;
+  background-color: #f7f3ec;
+  border-radius: 3px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  box-sizing: border-box;
+  width: 95px;
+  padding: 9px 0 11px;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+  border: none;
+  border-radius: 3px;
+  background: #f7f3ec;
+}
