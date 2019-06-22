@@ -1001,9 +1001,7 @@ input[type="radio"].visually-hidden {
   padding-top: 15px;
   padding-right: 60px;
   color: rgba(0, 0, 0, 0.3);
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: red;
+  border-bottom: 1px dotted #ee3643;
 }
 
 .filter:last-child a {
