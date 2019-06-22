@@ -982,20 +982,40 @@ input[type="radio"].visually-hidden {
 
 .sort {
   display: flex;
-  margin: 0 auto;
-  margin-left: 15px;
   flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-content: stretch;
-  align-items: center;
-  width: 705px;
-  position: relative;
+  width: 700px;
   background-color: #f7f3ec;
+  margin: 0 auto;
+}
+
+.filter a {
+  font-family: "PTSans";
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  text-transform: uppercase;
+  display: inline-block;
+  white-space: nowrap;
+  padding-top: 15px;
+  padding-right: 60px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: red;
+}
+
+.filter:last-child a {
+  padding-right: 0px;
+}
+
+.filter:first-child a {
+  color: #ee3643;
 }
 
 .sort h3 {
-  padding: 14px 90px 15px 19px;
+  padding: 2px 90px 2px 19px;
   font-family: "PTSans";
   font-size: 13px;
   font-weight: normal;
@@ -1021,6 +1041,10 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.sort {
+  margin-bottom: 36px;
+  margin-top: 12px;
+}
 
 .filter li:first-child {
   list-style: none;
