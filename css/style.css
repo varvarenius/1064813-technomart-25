@@ -1004,6 +1004,7 @@ input[type="radio"].visually-hidden {
   background-color: #f7f3ec;
   margin: 0 auto;
   margin-left: 15px;
+  height: 48px;
 }
 
 .filter a {
@@ -1024,6 +1025,7 @@ input[type="radio"].visually-hidden {
 
 .filter:last-child a {
   padding-right: 0px;
+  margin-right: 0px;
 }
 
 .filter:first-child a {
@@ -1031,24 +1033,8 @@ input[type="radio"].visually-hidden {
   border-bottom: none;
 }
 
-.direction a {
-  display: inline-block;
-}
-
-.direction:first-child a{
-  color: #ee3643;
-  padding-right: 21px;
-  padding-top: 14px;
-}
-
-.direction:last-child a{
-  color: #c5c5c5;
-  padding-right: 21px;
-  padding-top: 14px;
-}
-
 .sort h3 {
-  padding: 2px 90px 2px 19px;
+  padding: 2px 90px 12px 19px;
   font-family: "PTSans";
   font-size: 13px;
   font-weight: normal;
@@ -1092,24 +1078,36 @@ input[type="radio"].visually-hidden {
 .filter li:nth-child(2) {
   list-style: none;
   position: relative;
-  padding: 14px 71px 13px 0px;
+  padding: 14px 71px 10px 0px;
 }
 
 .filter li:last-child {
   list-style: none;
   position: relative;
-  padding: 14px 0px 13px 0px;
+  padding: 14px 0px 10px 0px;
 
 }
 
 .direction-sort li {
   list-style: none;
   padding-right: 20px;
+  display: inline-block;
 }
 
-.direction {
+.direction-sort .up {
+  color: #ee3643;
+
+}
+
+.direction-sort .down {
+  color: #c5c5c5;
+}
+
+.direction-sort {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding-bottom: 14px;
 }
 
 .main-page {
